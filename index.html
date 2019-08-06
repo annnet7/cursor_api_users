@@ -6,11 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My first API</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+    <div class="container">
+        <div class="content">
+            <form>
+                <input type="text" id="name" class="regInput" value="Donatello">
+                <input type="number" id="age" min="0" class="regInput" value="28">
+                <button id="regUserBtn" type="button">Register new Turtle</button>
+            </form>
+            <div id="userList">
+
+            </div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
+
+
 </body>
 
 </html>
