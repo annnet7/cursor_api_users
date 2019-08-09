@@ -32,7 +32,7 @@ body {
     padding-top: 250px;
 }
 
-form {
+.createUserInput {
     display: block;
     background-color: rgba(255, 255, 255, .8);
     padding: 30px;

@@ -5,28 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My first API</title>
+    <title>API_get users</title>
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+
     <div class="container">
         <div class="content">
-            <form>
-                <input type="text" id="name" class="regInput" value="Donatello">
-                <input type="number" id="age" min="0" class="regInput" value="28">
-                <button id="regUserBtn" type="button">Register new Turtle</button>
-            </form>
+            <div id="NewUserContainer" class="createUserInput">
+                <input type="text" id="nameInput" value="Raffael" class="regInput">
+                <input type="text" id="ageInput" value="18" min="0" max="200" class="regInput">
+                <button id="addNewUser">Create new user</button>
+            </div>
             <div id="userList">
 
             </div>
         </div>
     </div>
-
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src='https://unpkg.com/axios/dist/axios.min.js'></script>
     <script src="main.js"></script>
-
-
 </body>
 
 </html>
