@@ -30,7 +30,8 @@
 
         //del button
         let delButton = document.createElement('button');
-        delButton.metaId = item['id'];
+        if (item._id) item.id = item._id;
+        delButton.metaId = item.id;
         delButton.className = 'dellBtn';
         delButton.innerText = "Delete";
         rowDiw.appendChild(delButton);
