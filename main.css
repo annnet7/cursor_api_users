@@ -119,3 +119,7 @@ button:hover {
     box-sizing: border-box;
     border: 1px solid #7ca3c4;
 }
+#errorText {
+    color: red;
+    display: none;
+}

@@ -1,4 +1,4 @@
-(async() => {
+(async() => {    
 
     function showUserCard(obj) {
         let userCardDiv = document.createElement('div');
@@ -98,12 +98,25 @@
     //create new user
     let createBtn = document.getElementById('addNewUser');
     createBtn.addEventListener('click', function() {
-        let name = document.getElementById('nameInput').value;
+        let nameInput = document.getElementById('nameInput');
+        let name = nameInput.value;
+        /**validation */
+        let regchar = new RegExp("^[a-zA-Z\b]+$");
+        if(!regchar.test(name))
+        {
+            nameInput.style.border="3px solid red";
+            document.getElementById('errorText').style.display = "block";
+            return;
+        }
+        document.getElementById('errorText').style.display = "none";
+        nameInput.style.border = " 1px solid #7ca3c4";
         let age = document.getElementById('ageInput').value;
         let newUserObj = {
             name: name,
             age: age
         };
+        
+
         CreateNewUser(newUserObj);
     })
 
